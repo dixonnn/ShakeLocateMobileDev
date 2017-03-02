@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/activity_main"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:paddingBottom="@dimen/activity_vertical_margin"
+android:paddingLeft="@dimen/activity_horizontal_margin"
+android:paddingRight="@dimen/activity_horizontal_margin"
+android:paddingTop="@dimen/activity_vertical_margin"
+tools:context="com.example.cdixon8.shakelocatemobiledev.MainActivity">
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/longRes"
+    android:layout_alignBaseline="@+id/longName"
+    android:layout_alignBottom="@+id/longName"
+    android:layout_toRightOf="@+id/longName"
+    android:layout_toEndOf="@+id/longName"
+    android:layout_marginLeft="23dp"
+    android:layout_marginStart="23dp"
+    android:textColor="@android:color/black" />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/latRes"
+    android:layout_alignBaseline="@+id/latName"
+    android:layout_alignBottom="@+id/latName"
+    android:layout_toRightOf="@+id/longName"
+    android:layout_toEndOf="@+id/longName"
+    android:textColor="@android:color/black" />
+
+    <TextView
+    android:text="Longitude:"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="27dp"
+    android:id="@+id/longName"
+    android:textSize="24sp"
+        android:layout_below="@+id/latName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="42dp"
+        android:layout_marginStart="42dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Latitude:"
+        android:textSize="24sp"
+        android:id="@+id/latName"
+        android:layout_marginTop="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/longName"
+        android:layout_alignStart="@+id/longName" />
+
+    <TextView
+        android:text="Shake Me"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/shakeMe"
+        android:textSize="30sp"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="normal|bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp" />
+
+    <Button
+        android:text="Find on Map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/display"
+        android:layout_marginTop="57dp"
+        android:onClick="nextAct"
+        android:layout_below="@+id/longName"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
